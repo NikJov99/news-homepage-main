@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700;800&family=Outfit:wght@300;400;600&family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
+  padding: 20px;
+  width: 375px;
+  font-size: 15px;
+}
+
+.desktop-header {
+  display: none;
+}
+
+.main-image-desktop {
+  display: none;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .main-image-mobile {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--Very-dark-blue);
+}
+
+.top-section p {
+  margin-bottom: 1.5rem;
+  color: var(--Dark-grayish-blue);
+}
+
+button {
+  border: none;
+  padding: 15px;
+  width: 50%;
+  background-color: var(--Soft-red);
+  color: #fff;
+  font-weight: 700;
+  transition: 0.3s ease;
+  margin-bottom: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--Very-dark-blue);
+}
+
+.new {
+  background-color: var(--Very-dark-blue);
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 3rem;
+}
+
+.new h2 {
+  color: var(--Soft-orange);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.new a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.new a:hover {
+  color: var(--Soft-orange);
+}
+
+.new p {
+  color: var(--Grayish-blue);
+  font-size: 1rem;
+}
+
+.new div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--Dark-grayish-blue);
+  border: none;
+}
+
+.bottom-section article {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.bottom-section a {
+  text-decoration: none;
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+  font-size: 1.4rem;
+  transition: 0.4s ease;
+}
+
+.bottom-section a:hover {
+  color: var(--Soft-red);
+}
+
+article {
+  height: 10rem;
+}
+
+.article-image {
+  height: 100%;
+}
+
+.article-image img {
+  height: 100%;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+}
+
+.article-content h1 {
+  color: var(--Grayish-blue);
+}
+
+.article-content h2 {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+
+.article-content p {
+  color: var(--Dark-grayish-blue);
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    width: 1400px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .main-image-desktop {
+    display: block;
+  }
+
+  .main-image-mobile {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-header ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 1.5rem;
+  }
+
+  .desktop-header a {
+    text-decoration: none;
+    transition: 0.4s ease;
+    color: var(--Grayish-blue);
+  }
+
+  .desktop-header a:hover {
+    color: var(--Soft-red);
+  }
+
+  .main-content {
+    display: flex;
+  }
+
+  .main-content-left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 2rem;
+  }
+
+  .main-content-left img {
+    margin-bottom: 2rem;
+  }
+
+  .top-section-bottom {
+    display: flex;
+  }
+
+  .top-section-bottom-left,
+  .top-section-bottom-right {
+    width: 50%;
+  }
+
+  .top-section-bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .top-section-bottom-right p {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 4.3rem;
+    line-height: 3.5rem;
+  }
+
+  .new {
+    width: 30%;
+  }
+
+  .new a {
+    font-size: 2rem;
+  }
+
+  .new p {
+    font-size: 1.5rem;
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
